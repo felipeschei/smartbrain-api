@@ -22,7 +22,7 @@ const image = require('./controllers/image');
 app.use(cors());
 app.use(bodyParser.json());
 
-app.get('./', (req, res) => {res.send('Server up and running!')});
+app.get('/', (req, res) => {res.send('Server up and running!')});
 
 app.get('/profile/:id', profile.getProfile(knex));
 
